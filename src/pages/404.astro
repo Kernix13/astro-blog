@@ -1,0 +1,30 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+---
+
+<MainLayout title="Page not found" description="404 page">
+	  <div
+    class="container"
+    style={{
+      display: "grid",
+      placeItems: "center",
+      textAlign: "center",
+      gap: "var(--space-sm)",
+    }}
+  >
+    <div>
+      <h1 class="h1">Sorry, that page does not exist!</h1>
+      <p>You may have entered the wrong address...</p>
+    </div>
+    <Link
+      href="/"
+      style="secondary"
+      text="Go Home"
+      icon={{
+        name: "tabler:home",
+        side: "right",
+      }}
+    />
+  </div>
+</MainLayout>
